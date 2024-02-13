@@ -49,7 +49,7 @@
         </div>
     </div>
     <div class="banner-custom">
-        <div class="container">
+      <div class="container">
        <h1>LE NOSTRE OLIVE</h1>
        <p>Le olive greche sono una deliziosa e versatile delizia mediterranea amata in tutto il mondo per il loro sapore unico e la loro consistenza succosa. Caratterizzate da una vasta gamma di varietà, le olive greche offrono una gamma di sapori che soddisfano tutti i palati.
        </p>
@@ -62,5 +62,6 @@
         
        <p> Le olive greche, indipendentemente dalla varietà, sono un'aggiunta essenziale alla cucina mediterranea, regalando un tocco di autentico sapore e tradizione a qualsiasi piatto. Con la loro versatilità e ricchezza di sapori, le olive greche sono un vero e proprio tesoro culinario che conquista i cuori di chiunque le assaggi</p>
       </div>
-    </div>
+    </div>  
+  
 </x-layout>
