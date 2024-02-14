@@ -50,18 +50,7 @@
 .card:hover .details {
     left: 300px;
 }
-.details::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 10px solid #fff;
-    border-bottom: 10px solid transparent;
-    border-top: 10px solid transparent;
-    left: 0;
-    top: 50%;
-    /* transform:translatey(-50%) ; */
-}
+
 
 .card .details h3 {
     color: white;
