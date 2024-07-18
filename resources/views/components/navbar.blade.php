@@ -12,10 +12,13 @@
             <a class="nav-link active fw-bold" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#">Chi siamo</a>
+            <a class="nav-link fw-bold" href="/chi-siamo">Chi siamo</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold" href="/prodotti">Prodotti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="/contatti">Contatti</a>
           </li>
         </ul>
       </div>

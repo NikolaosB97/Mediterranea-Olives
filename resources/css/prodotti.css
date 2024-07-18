@@ -1,151 +1,402 @@
-.card {
-    position: relative;
-    width: 300px;
-    height: 380px;
-    background-color: #f7ecd8;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.card .imgbx {
-    position: absolute;
-    min-width: 300px;
-    height: 100%;
-    background-color: #f7ecd8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* box-shadow: 0 10px 10px rgba(0, 0, 0, .3); */
-    overflow: hidden;
-    z-index: 2;
-    left: 0;
-}
-
-.card .imgbx img {
-    max-width: 250px;
-    transition: .5s;
-}
-
-.card:hover .imgbx img {
-    transform: rotate(-35deg);
-}
-
-.card .details {
-    min-width: 300px;
-    height: 100%;
-    background-color: #8f4633;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.container-product {
+    margin-top: 100px;
     padding: 20px;
-    text-transform: capitalize;
-    z-index: 1;
-    position: absolute;
-    left: 0;
-}
-.card:hover .details {
-    left: 300px;
-}
-
-
-.card .details h3 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.5em;
-    line-height: 1em;
-}
-
-.card .details h3 span {
-    font-size: .65em;
-    font-weight: 300;
-    text-transform: none;
-    opacity: .85;
-}
-
-.card .details h4 {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: .9em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1em;
+    border-radius: 8px;  
+  }
+  
+  /* Selector button styling */
+  .btn-group .btn {
+    border-radius: 0;
+  }
+  
+  .btn-group .btn:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  
+  .btn-group .btn:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .prodotti-custom{
+    background-image: url("/public/img/BG-PRODOTTI.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh; /* Altezza completa della viewport */
 }
 
-.card .details p {
-    opacity: .8em;
-    color: #fff;
-    font-size: .85em;
-    line-height: 19px;
-}
 
-.card .details ul {
+
+  
+  /* Card styling */
+  .card {
+    position: relative;
+    width: 100%;
+    height: 380px;
     display: flex;
-    gap: 10px ;
-    list-style: none;
-}
-
-.card .details ul li {
-    list-style: none;
-    border: 2px solid #fff;
-    color: #fff;
-    width: 40px;
-    height: 40px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.5s;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+  
+  .imgbx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    font-weight: 500;
-    opacity: .5;
-    transition: .5s;
-}
-
-.card .details ul li:hover {
-    color: black;
-    background-color: #fff;
-    opacity: 1;
-}
-
-.card .details .group {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.card .details .group h2 {
-    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .imgbx img {
+    width: 100%;
+    transition: transform 0.5s, filter 0.5s;
+  }
+  
+  .card:hover .imgbx img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+  }
+  
+  .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+    z-index: 2;
+  }
+  
+  .card:hover .details {
+    transform: translateY(0);
+  }
+  
+  .details h3 {
+    margin: 0;
+    font-size: 1.5em;
     font-weight: 600;
-    font-size: 2em;
-}
-
-.card .details .group h2 sup {
+  }
+  
+  .details span {
+    display: block;
+    font-size: 0.75em;
     font-weight: 300;
-}
-
-.card .details .group h2 small {
-    font-size: .75em;
-}
-
-.card .details .group a {
-    display: inline-flex;
-    padding: 10px 25px;
-    text-decoration: none;
-    color: #1980aa;
+    opacity: 0.85;
+  }
+  .pallet-info-btn {
+    border: 2px solid #d8b45d;
     background-color: #fff;
-    font-weight: 500;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 50px; /* Border-radius aumentato per una forma più arrotondata */
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    flex-shrink: 0; /* Impedisce al bottone di ridimensionarsi */
+    text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+
+.pallet-info-btn:hover {
+    background-color: #d8b45d;
+    color: #fff;
+}
+
+.pallet-icon {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px; /* Aggiunge margine a destra dell'immagine */
+}
+
+  
+  /* Media Queries per schermi più piccoli */
+@media (max-width: 768px) {
+  .products {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product {
+      flex: 1 1 100%;
+  }
+}
+
+/* Media Queries per schermi molto piccoli */
+@media (max-width: 480px) {
+  header {
+      font-size: 18px;
+  }
+
+  .product {
+      flex: 1 1 90%;
+  }
+}
+
+/* Container product styling */
+.container-product {
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 8px;  
+}
+
+/* Selector button styling */
+.btn-group .btn {
+  border-radius: 0;
+}
+
+.btn-group .btn:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.btn-group .btn:last-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.prodotti-custom {
+  background-image: url("/public/img/BG-PRODOTTI.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh; /* Altezza completa della viewport */
+}
+
+/* Card styling */
+.card {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.5s;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 .card:hover {
-    width: 600px;
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
-.container-product{
-    margin-top: 100px;
+.imgbx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.imgbx img {
+  width: 100%;
+  transition: transform 0.5s, filter 0.5s;
+}
+
+.card:hover .imgbx img {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+  z-index: 2;
+}
+
+.card:hover .details {
+  transform: translateY(0);
+}
+
+.details h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.details span {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+.pallet-info-btn {
+  border: 2px solid #d8b45d;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 50px; /* Border-radius aumentato per una forma più arrotondata */
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  flex-shrink: 0; /* Impedisce al bottone di ridimensionarsi */
+  text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+
+.pallet-info-btn:hover {
+  background-color: #d8b45d;
+  color: #fff;
+}
+
+.pallet-icon {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px; /* Aggiunge margine a destra dell'immagine */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .col-lg-3 {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-12 {
+      flex: 0 0 100%;
+      max-width:95%;
+  }
+  h1.text-center {
+    margin-top: -100px; /* Riduce il margine superiore per schermi molto grandi */
+}
+}
+@media (max-width: 480px) {
+  .prodotti-custom {
+      background-size: contain; /* Assicura che l'intera immagine sia visibile */
+      background-position: center; /* Centra l'immagine */
+      height: auto; /* Permette all'altezza di adattarsi al contenuto */
+      min-height: 400px; /* Imposta un'altezza minima */
+  }
+}
+@media (max-width: 576px) {
+  .card {
+      height: 150px; /* Altezza ridotta per schermi molto piccoli */
+      margin: 5px; /* Riduce il margine tra le card */
+  }
+
+  .details h3 {
+      font-size: 0.9em; /* Riduce la dimensione del font per il titolo */
+  }
+
+  .details span {
+      font-size: 0.6em; /* Riduce la dimensione del font per il testo di supporto */
+  }
+
+  .imgbx img {
+      width: 70%; /* Riduce ulteriormente la dimensione dell'immagine all'interno della card */
+  }
+
+  .pallet-info-btn {
+      font-size: 12px; /* Riduce la dimensione del font del bottone */
+      padding: 6px 12px; /* Riduce il padding del bottone */
+      margin-bottom: 10px; /* Aggiunge margine inferiore per spaziatura */
+  }
+
+  .pallet-icon {
+      width: 80px; /* Riduce la dimensione dell'icona del pallet */
+      height: 80px; /* Riduce la dimensione dell'icona del pallet */
+      margin-right: 10px; /* Riduce il margine a destra dell'immagine */
+  }
+
+  .prodotti-custom {
+      height: 60vh; /* Riduce l'altezza della sezione per evitare scroll eccessivo */
+  }
+
+  h1.text-center {
+      font-size: 1.2em; /* Riduce la dimensione del font per il titolo principale */
+  }
+
+  .btn-group .btn {
+      font-size: 12px; /* Riduce la dimensione del font dei bottoni */
+      padding: 5px 10px; /* Riduce il padding dei bottoni */
+  }
+}
+@media (min-width: 2000px) {
+  .pallet-info-btn {
+      font-size: 50px; /* Aumenta la dimensione del font del bottone */
+      padding: 15px 30px; /* Aumenta il padding del bottone */
+      margin-bottom: 20px; /* Aggiunge margine inferiore per spaziatura */
+  }
+
+  .pallet-icon {
+      width: 300px; /* Aumenta la dimensione dell'icona del pallet */
+      height: 300px; /* Aumenta la dimensione dell'icona del pallet */
+      margin-right: 20px; /* Aggiunge margine a destra dell'immagine */
+  }
+
+  .prodotti-custom {
+      height: 100vh; /* Aumenta l'altezza della sezione per schermi grandi */
+  }
+
+  h1.text-center {
+      font-size: 5.5em; /* Aumenta la dimensione del font per il titolo principale */
+  }
+
+  .btn-group .btn {
+      font-size: 40px; /* Aumenta la dimensione del font dei bottoni */
+      padding: 10px 20px; /* Aumenta il padding dei bottoni */
+  }
+
+  .card {
+      height: 450px; /* Aumenta l'altezza delle card per schermi grandi */
+  }
+
+  .details h3 {
+      font-size: 1.8em; /* Aumenta la dimensione del font per il titolo nelle card */
+  }
+
+  .details span {
+      font-size: 1em; /* Aumenta la dimensione del font per il testo di supporto nelle card */
+  }
+
+  .imgbx img {
+      width: 90%; /* Aumenta la dimensione dell'immagine all'interno della card */
+  }
+  h1.text-center {
+    margin-top: -170px; /* Riduce il margine superiore per schermi molto grandi */
+}
 }

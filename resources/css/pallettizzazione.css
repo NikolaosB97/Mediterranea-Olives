@@ -1,0 +1,114 @@
+.palle-custom{
+    background-image: url("/public/img/pallettizzazione.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh; /* Altezza completa della viewport */
+
+}
+.table-palle {
+    background-color: transparent; /* Sfondo trasparente per la tabella */
+    border-collapse: collapse;
+    width: 100%; /* Riduce ulteriormente la larghezza della tabella */
+    margin: 20px; /* Spazio intorno alla tabella */
+}
+
+.table-palle th, .table-palle td {
+    background-color: transparent; /* Sfondo trasparente per le celle */
+    color: white; /* Colore del testo */
+    border: 1px solid white; /* Bordo bianco per le celle */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Assicura che l'intestazione sia visibile e distinta */
+.table-palle th {
+    font-weight: bold;
+    text-align: center; /* Centra il testo delle intestazioni */
+}
+
+.table-palle.table-bordered td, .table-palle.table-bordered th, 
+.table-palle.table-striped td, .table-palle.table-striped th {
+    border: 1px solid #dee2e6;
+    color: #000000;
+}
+
+.table-responsive {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: #1a1a1a;
+    border-bottom: 2px solid #4CAF50; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table-wrapper {
+    width: 45%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-wrapper .table-palle {
+    flex-grow: 1; /* Si espande per riempire lo spazio disponibile */
+}
+@media (max-width: 768px) {
+    .table-wrapper {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .palle-custom {
+        background-size: contain; /* Assicura che l'intera immagine sia visibile */
+        background-position: center; /* Centra l'immagine */
+        height: auto; /* Permette all'altezza di adattarsi al contenuto */
+        min-height: 400px; /* Imposta un'altezza minima */
+    }
+}
+/* Responsive design per schermi molto grandi */
+@media (min-width:2000px) {
+    .palle-custom {
+        height: 80vh; /* Riduce l'altezza dell'immagine di sfondo */
+    }
+    .table-palle th, .table-palle td {
+        font-size: 2.2em; /* Ingrandisce il testo delle celle */
+    }
+    h2 {
+        font-size: 3em; /* Ingrandisce il testo del titolo */
+    }
+    h1 {
+        font-size: 3.5em; /* Ingrandisce il testo dell'intestazione principale */
+        
+       
+    }
+    .table-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px; /* Spazio tra le tabelle */
+        width: 100%;
+        padding: 0 100px; /* Aggiunge padding laterale per schermi grandi */
+    }
+    .table-wrapper {
+        flex: 1; /* Le tabelle prendono la stessa larghezza */
+    }
+}
+.table-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+.table-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -7,5 +7,29 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
+  .navbar-collapse.show {
+    background-color: white;
+    padding: 1rem;
+}
 
+/* Media query per schermi molto grandi */
+@media (min-width: 1600px) {
+  .navbar-brand {
+      font-size: 7em; /* Ingrandisce il nome del brand */
+  }
+  .navbar-nav .nav-link {
+      font-size: 2.5em; /* Ingrandisce i link della navbar */
+      padding: 1rem; /* Aumenta il padding per i link */
+  }
+  .navbar-collapse.show {
+      padding: 2rem; /* Aumenta il padding per la navbar quando è espansa */
+  }
+  .navbar {
+      padding: 1.5rem 2rem; /* Aumenta il padding generale della navbar */
+  }
+  .navbar-brand img {
+      width: 400px; /* Modifica la larghezza del logo */
+      height: auto; /* Mantiene le proporzioni del logo */
+  }
+}
   

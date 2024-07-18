@@ -1,0 +1,87 @@
+.siamo-custom {
+    background-image: url("/public/img/Chi-siamo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: right; /* Center content horizontally */
+    padding: 40px;
+    background-blend-mode: multiply; /* Adds blend effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    text-align: center; /* Center text */
+    max-width: 100%; /* Ensure container doesn't exceed screen width */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    overflow: hidden; /* Prevent overflow */
+   
+}
+
+.siamo-custom p {
+    padding: 30px; /* Increased padding for better readability */
+    margin: 0;
+    font-size: 1.2rem; /* Increase text size */
+    line-height: 1.5; /* Increase line height for better readability */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 100%; /* Ensure text container doesn't exceed screen width */
+    word-wrap: break-word; /* Ensure long words break and wrap to the next line */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .siamo-custom p {
+        font-size: 1.0rem; /* Adjust text size for tablets */
+        padding: 2px; /* Adjust padding for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .siamo-custom {
+        flex-direction: column; /* Stack content vertically for small screens */
+        justify-content: center; /* Center content for small screens */
+        padding: 10px; /* Reduce padding for small screens */
+    }
+
+    .siamo-custom p {
+        font-size: 0.7rem; /* Decrease text size for small screens */
+        padding: 5%;
+     
+    }
+    .h2-custom {
+        font-size: 1.0rem; /* Decrease text size for small screens */
+        padding: 6%;
+        
+     
+    }
+}
+
+@media (max-width: 480px) {
+    .siamo-custom {
+        flex-direction: column; /* Stack content vertically for small screens */
+        justify-content: center; /* Center content for small screens */
+        padding: 10px; /* Reduce padding for small screens */
+    }
+
+    .siamo-custom p {
+        font-size: 0.7rem; /* Decrease text size for small screens */
+        padding: 5%;
+     
+    }
+    .h2-custom {
+        font-size: 1.0rem; /* Decrease text size for small screens */
+        padding: 6%;
+        
+     
+    }
+
+}
+/* Responsive styles */
+@media (min-width: 2000px) {
+    .siamo-custom p {
+        font-size: 2.1rem; /* Adjust text size for tablets */
+        padding: 25px; /* Adjust padding for tablets */
+    }
+    .h3-custom{
+        font-size: 3.1rem; /* Adjust text size for tablets */
+        padding: 25px; /* Adjust padding for tablets */
+
+    }
+}

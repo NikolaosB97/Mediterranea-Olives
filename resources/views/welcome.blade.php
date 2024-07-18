@@ -1,14 +1,15 @@
 <x-layout>
-    <div class="vh-100 header-custom">
+    <div class=" header-custom">
     </div>
     <div class="container mt-5">
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
                 <p> 
-                    "Benvenuti alla Mediterranea Olives, la tua destinazione di fiducia per le migliori olive greche! Siamo appassionati di portare l'autentico gusto mediterraneo direttamente sulle tue tavole. Situati al cuore della Grecia, siamo circondati da campi rigogliosi di ulivi, dove le nostre olive sono coltivate con cura e dedizione.
-                    Offriamo una vasta selezione di olive di alta qualità, tra cui le rinomate kalamata, le succose Castelvetrano e molte altre varietà uniche e deliziose. Ogni oliva è raccolta al momento perfetto di maturazione per garantire il massimo sapore e freschezza.
-                    Oltre alle nostre olive, proponiamo una gamma di prodotti gourmet correlati, come l'olio extravergine di oliva greco, condimenti speciali e antipasti esclusivi, tutto per arricchire le tue esperienze culinarie con il gusto autentico della Grecia.
-                    Presso la  Mediterranea Olives, ci impegniamo a offrire un servizio clienti eccellente e una esperienza di acquisto senza pari. Con il nostro impegno per la qualità e l'autenticità, siamo pronti a portare un pezzo di Grecia direttamente nella tua cucina. Grazie per aver scelto la Greek Olive Emporium, dove la passione per le olive greche incontra l'eccellenza culinaria."
+                   
+                    STORIA: La leggenda Greca narra che il primo albero di ulivo nacque dalla rivalità tra Atena e Poseidone per il predominio dell'Attica. Sarebbe stato assegnato alla città il nome della divinità che avrebbe offerto il dono più bello e più prezioso per gli uomini. Spettò a Zeus scegliere uno dei due.
+                 Così, Poseidone, colpì con il suo tridente il suolo, e da li fece sorgere il cavallo, animale potente, veloce e pos-sente, capace di vincere tutte le battaglie. Atena, invece, con la sua lancia colpì una roccia e fece nascere dalla terra un albero bellissimo: il primo albero di olivo.
+                 L'albero era capace di illuminare la notte, medicare le ferite, curare le malattie e offriva benessere e pace a tutti coloro che lo coltivavano.
+                 Mediterranea
                     </p>
             </div>
             <div class="col-12 col-md-6">
@@ -50,17 +51,21 @@
     </div>
     <div class="banner-custom">
       <div class="container">
-       <h1>LE NOSTRE OLIVE</h1>
-       <p>Le olive greche sono una deliziosa e versatile delizia mediterranea amata in tutto il mondo per il loro sapore unico e la loro consistenza succosa. Caratterizzate da una vasta gamma di varietà, le olive greche offrono una gamma di sapori che soddisfano tutti i palati.
-       </p>
-
-        <p>Le celebri kalamata, dal colore viola scuro e dalla carne tenera, sono forse le più conosciute. Con il loro sapore ricco e leggermente amaro, sono perfette per arricchire insalate, piatti di carne e formaggi.</p>
-
-        <p>Le Castelvetrano, dall'inconfondibile colore verde smeraldo e dalla consistenza carnosa, sono apprezzate per la loro dolcezza e croccantezza. Ottime da gustare da sole come snack o come accompagnamento a piatti di pesce e verdure.</p>
-        
-        <p>Le calamata, invece, con il loro caratteristico sapore leggermente salato e leggermente amaro, sono perfette per arricchire insalate, pizze, piatti di carne e formaggi.</p>
-        
-       <p> Le olive greche, indipendentemente dalla varietà, sono un'aggiunta essenziale alla cucina mediterranea, regalando un tocco di autentico sapore e tradizione a qualsiasi piatto. Con la loro versatilità e ricchezza di sapori, le olive greche sono un vero e proprio tesoro culinario che conquista i cuori di chiunque le assaggi</p>
+       <h1>LE NOSTRE OLIVE:</h1>
+     <p>Scoprite il sapore autentico delle olive della Calcidica direttamente dal cuore della Grecia. 
+        Vi invitiamo ad esplorare una selezione esclusiva di olive di alta qualità, cresciute sotto il sole della Calcidica, 
+        coltivate con cura e passione secondo tradizioni secolari per garantire il massimo sapore. 
+        Cosa rende le nostre olive speciali: 
+        Origini controllate: provengono direttamente dalle colline soleggiate della Calcidica, dove il clima 
+        mediterraneo conferisce loro un sapore ricco. 
+        Qualità superiore: selezione rigorosa delle olive migliori, garantendo freschezza e gusto autentico. Tradizione e innovazione: unisce la passione per le antiche tecniche di coltivazione con moderni standard di 
+        qualità e sicurezza alimentare. 
+        Servizio clienti: siamo qui per offrire un’esperienza di acquisto eccellente, con spedizioni veloci e assistenza 
+        dedicata. 
+        Siete pronti a trasformare ogni pasto in un’esperienza gustativa unica con le nostre olive di qualità 
+        superiore? 
+        Unitevi a noi nel celebrare la tradizione e il gusto per un viaggio culinario indimenticabile, dove ogni oliva 
+        racconta una storia di autenticità e passione. </p>
       </div>
     </div>  
   

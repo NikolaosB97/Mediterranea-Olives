@@ -1,0 +1,155 @@
+.fade-in-left, .fade-in-right {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-left {
+    transform: translateX(-50px);
+}
+
+.fade-in-right {
+    transform: translateX(50px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* .container-product {
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 8px;
+  } */
+/* Stile per l'immagine di sfondo */
+.cointainer-nutrition {
+    background-image: url('/public/img/BBBG.jpg'); /* sostituisci con il percorso della tua immagine */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    background-blend-mode: multiply; /* Aggiunge l'effetto di blend */
+    background-color: rgba(0, 0, 0, 0.5); /* Colore scuro con opacità per l'effetto di oscuramento */
+}
+.table {
+    background-color: transparent; /* Sfondo trasparente per la tabella */
+    border-collapse: collapse;
+    width: 60%; /* Riduce ulteriormente la larghezza della tabella */
+    margin-left: auto; /* Sposta la tabella a destra */
+    margin-right: -20%; /* Regola questo valore per spostare ulteriormente a destra */
+    float: right; /* Allinea la tabella a destra */
+}
+
+.table th, .table td {
+    background-color: transparent; /* Sfondo trasparente per le celle */
+    color: white; /* Colore del testo */
+    border: 1px solid white; /* Bordo bianco per le celle */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Assicura che l'intestazione sia visibile e distinta */
+.table th {
+    font-weight: bold;
+    text-align: center; /* Centra il testo delle intestazioni */
+}
+.btn-olive {
+    display: inline-block;
+    background-color: #556B2F; /* Colore verde oliva */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    
+   
+}
+.btn-align-left {
+    align-self: flex-start;
+    margin-bottom: 20px; /* Aggiunge un margine inferiore per separarlo dagli altri elementi */
+}
+
+.btn-olive:hover {
+    background-color:#c7ab56; /* Colore verde oliva più chiaro per l'hover */
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .table {
+        width: 80%; /* Riduci la larghezza sui dispositivi mobili */
+        float: none; /* Rimuovi l'allineamento a destra */
+        margin: 0 auto; /* Centra la tabella */
+    }
+
+    .table th, .table td {
+        padding: 4px; /* Riduci il padding per migliorare la leggibilità */
+    }
+}
+
+.container-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Media query per schermi grandi */
+@media (min-width: 2000px) {
+    .container-product {
+        margin-top: 50px; /* Riduci il margine superiore per schermi grandi */
+    }
+
+    .cointainer-nutrition {
+        padding: 40px; /* Aumenta il padding per schermi grandi */
+    }
+
+    .table {
+        width: 70%; /* Aumenta la larghezza della tabella */
+        margin: right 20px;; /* Regola la posizione della tabella */
+        float: right; /* Allinea la tabella a destra */
+        
+    }
+
+    .table th, .table td {
+        padding: 25px; /* Aumenta il padding delle celle */
+        font-size: 1.8em; /* Aumenta la dimensione del font delle celle */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.5em; /* Aumenta la dimensione del font dei titoli */
+    }
+
+    p {
+        font-size: 2.2em; /* Aumenta la dimensione del font dei paragrafi */
+    }
+
+    .btn-olive {
+        font-size: 28px; /* Aumenta la dimensione del font del bottone */
+        padding: 15px 40px; /* Aumenta il padding del bottone */
+        margin-top: 200px!important;
+      
+    }
+}
+
+
+

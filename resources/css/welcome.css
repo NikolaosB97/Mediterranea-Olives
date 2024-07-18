@@ -11,6 +11,7 @@
     background-image: url("/public/img/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 95vh; /* Altezza completa della viewport */
 }
 .margin-custom{
     margin-top: 50px;
@@ -82,4 +83,54 @@
     min-height:100px;
     max-height:150px;
   }
-  
+  @media (max-width: 480px) {
+    .header-custom {
+        background-size: contain; /* Assicura che l'intera immagine sia visibile */
+        background-position: center; /* Centra l'immagine */
+        height: auto; /* Permette all'altezza di adattarsi al contenuto */
+        min-height: 400px; /* Imposta un'altezza minima */
+    }
+}
+@media (min-width: 2000px) {
+  .header-custom {
+      min-height: 400px; /* Riduce l'altezza dell'header per schermi molto grandi */
+  }
+
+  .header-custom h1 {
+      font-size: 5rem; /* Aumenta la dimensione del testo dell'header */
+  }
+
+  .container p {
+      font-size: 2rem; /* Aumenta la dimensione del testo del contenuto */
+  }
+
+  .banner-custom h1 {
+      font-size: 4rem; /* Aumenta la dimensione del titolo nel banner */
+  }
+
+  .banner-custom p {
+      font-size: 2rem; /* Aumenta la dimensione del testo nel banner */
+  }
+
+  .container-icon p {
+      font-size: 1.5rem; /* Aumenta la dimensione del testo delle icone */
+  }
+
+  .container-icon i {
+      font-size: 4rem; /* Aumenta la dimensione delle icone */
+  }
+  .banner-custom::before{
+    height: 1600px;
+
+  }
+  .col-md-6 img {
+    width: 100%; /* Make the image larger */
+    float: right;
+}
+
+.col-md-6 p {
+    font-size: 1.90rem; /* Make the text larger */
+    float: left;
+    padding: 20px;
+}
+}
