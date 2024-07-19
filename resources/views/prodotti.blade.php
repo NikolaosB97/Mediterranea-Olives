@@ -26,11 +26,11 @@
         <button type="button" class="btn btn-outline-secondary active" id="allPackagesBtn" onclick="filterPackages('all')">All</button>
         <button type="button" class="btn btn-outline-secondary" id="barattoloBtn" onclick="filterPackages('barattolo')">Barattolo di vetro</button>
         <button type="button" class="btn btn-outline-secondary" id="pkg-1_5kgBtn" onclick="filterPackages('pkg-1_5kg')">Confezione 1,5 kg</button>
-        <a href="/contatti" class="btn btn-outline-secondary ml-auto">Per altre confezioni disponibili</a>
+        <a href="/contatti" class="btn btn-outline-secondary ml-auto">Altre confezioni disponibili:3kg-5kg-10kg-20kg</a>
     </div>
 </div>
 
-    <!-- Product and Package Cards -->
+   
     <div class="row justify-content-center">
         <!-- Product cards -->
         @foreach($products as $product)

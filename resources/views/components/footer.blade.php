@@ -29,7 +29,8 @@
                   </h6>
                   <p>
                       Progetto di brand identity curato da Maria Mangiapane Designer. <br>
-                      DEVELOPED BY NB.
+                      Foto realizzate da Gianpiero La Palerma.<br>
+                      Developed by NB.
                   </p>
               </div>
               <!-- Colonna -->
@@ -40,9 +41,10 @@
                   <h6 class="text-uppercase fw-bold mb-4">
                       Links
                   </h6>
-                  <p><a href="/welcome" class="text-reset">Home</a></p>
-                  <p><a href="" class="text-reset">Chi siamo</a></p>
+                  <p><a href="/" class="text-reset">Home</a></p>
+                  <p><a href="/chi-siamo" class="text-reset">Chi siamo</a></p>
                   <p><a href="/prodotti" class="text-reset">Prodotti</a></p>
+                  <p><a href="/contatti" class="text-reset">Contatti</a></p>
               </div>
               <!-- Colonna -->
 

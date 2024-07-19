@@ -28,8 +28,8 @@
         <div class="detail-box">
             <i class="fas fa-envelope detail-icon"></i>
             <h2>MANDARE UN MESSAGGIO</h2>
-            <p>Per supporto o qualsiasi domanda contattateci online o via email:</p>
-            <p><strong>Mediterraneagroup@virgilio.it</strong></p>
+            <p>Per supporto o qualsiasi domanda contattateci via email:</p>
+            <p><a href="mailto:Mediterraneagroup@virgilio.it" class="text-reset">Mediterraneagroup@virgilio.it</a></p>
         </div>
     </div>
 
