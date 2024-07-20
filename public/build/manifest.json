@@ -1,0 +1,40 @@
+{
+  "public/img/BBBG.jpg": {
+    "file": "assets/BBBG-BF2KFZom.jpg",
+    "src": "public/img/BBBG.jpg"
+  },
+  "public/img/BG-PRODOTTI.png": {
+    "file": "assets/BG-PRODOTTI-CPCLKDW6.png",
+    "src": "public/img/BG-PRODOTTI.png"
+  },
+  "public/img/BG-SHOW.png": {
+    "file": "assets/BG-SHOW-B2duzDpS.png",
+    "src": "public/img/BG-SHOW.png"
+  },
+  "public/img/Chi-siamo.jpeg": {
+    "file": "assets/Chi-siamo-B4fEQARE.jpeg",
+    "src": "public/img/Chi-siamo.jpeg"
+  },
+  "public/img/banner.jpg": {
+    "file": "assets/banner-fvPpMMkv.jpg",
+    "src": "public/img/banner.jpg"
+  },
+  "public/img/header.jpg": {
+    "file": "assets/header-Dy3kGwzE.jpg",
+    "src": "public/img/header.jpg"
+  },
+  "public/img/pallettizzazione.jpg": {
+    "file": "assets/pallettizzazione-CvFFLKrb.jpg",
+    "src": "public/img/pallettizzazione.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-B4tqqZEC.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-QB1OX7VK.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
